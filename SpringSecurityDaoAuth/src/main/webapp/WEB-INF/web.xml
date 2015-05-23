@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>SpringSecurityDaoAuth</display-name>
+
+
+   <!-- Spring MVC Configuration Starts Here  -->
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring-servlet.xml,
+                /WEB-INF/spring-servlet.xml
+   </param-value>
+	</context-param>
+
+	<listener>
+		<listener-class></listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class></servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Spring MVC Configuration Ends Here  -->
+
+	<!-- Spring Security Configuration Starts Here  -->
+	
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class></filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- Spring Security Configuration Ends Here  -->
+
+</web-app>
