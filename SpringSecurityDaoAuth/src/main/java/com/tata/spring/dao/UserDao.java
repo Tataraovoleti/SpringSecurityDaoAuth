@@ -1,5 +1,10 @@
 package com.tata.spring.dao;
 
+/**
+*
+* @author Tatarao voleti
+* @date   May 22, 2015
+*/
 import java.util.List;
 
 import com.tata.spring.beans.UserBean;

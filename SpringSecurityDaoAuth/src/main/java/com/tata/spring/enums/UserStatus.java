@@ -1,5 +1,10 @@
 package com.tata.spring.enums;
 
+/**
+*
+* @author Tatarao voleti
+* @date   May 22, 2015
+*/
 public enum UserStatus {
 	
 	ACTIVE("ACTIVE"),
